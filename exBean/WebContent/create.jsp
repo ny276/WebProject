@@ -15,4 +15,5 @@
  item.setName(request.getParameter("name"));
  studentDAO dao = new studentDAO(); //사용자 객체 생성
  dao.insertStudent(item);
+  response.sendRedirect("read.jsp");
 %>
